@@ -1,7 +1,7 @@
 {
   "@context": [
     "https://w3id.org/did/v1",
-    "http://context.transmute.org/element-did-v0.0.jsonld"
+    "https://context.transmute.org/element-did-v0.0.jsonld"
   ],
   "id": "did:elem:eURSFEEv6J7s3TJ-jhT_ZS4uGRyCDbwc347EWlqpNgw",
   "publicKey": [

@@ -7,6 +7,7 @@
     "dc": "http://purl.org/dc/terms/",
     "schema": "http://schema.org/",
     "sec": "https://w3id.org/security#",
+    "elem": "https://context.transmute.org/element",
     "didv": "https://w3id.org/did#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
 
@@ -82,7 +83,7 @@
     "publicKeyBase58": "sec:publicKeyBase58",
     "publicKeyPem": "sec:publicKeyPem",
     "publicKeyHex": "sec:publicKeyHex",
-    "publicKeyJwk": "sec:publicKeyJwk",
+    "publicKeyJwk": "elem:publicKeyJwk",
     "revoked": { "@id": "sec:revoked", "@type": "xsd:dateTime" },
     "service": { "@id": "didv:service", "@type": "@id", "@container": "@set" },
     "serviceEndpoint": { "@id": "didv:serviceEndpoint", "@type": "@id" },
