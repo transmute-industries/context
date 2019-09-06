@@ -25,7 +25,7 @@ describe("cannonize", () => {
       .createHash("sha256")
       .update(canonized)
       .digest("base64");
-    expect(hash).toBe("YUZF/4f7Ve/Ms73P7Hkvv2qR2L3WeZpRvuWV59I4vFY=");
+    expect(hash).toBe("FodRsml3FZ/vcrvRihtEeiz/2TIaqWffRbaZFn2oGxg=");
 
     const flattened = await jsonld.flatten(elemDidDoc);
 
