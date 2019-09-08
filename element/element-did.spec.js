@@ -36,6 +36,7 @@ describe("element-did", () => {
         "e989400ec23a42440795abab8a20388588da7390830b26a58e448bf15e3cb217"
       );
       const flattened = await jsonld.flatten(doc);
+      // console.log(JSON.stringify(flattened, null, 2));
       // You should click these links and make sure the documentation is correct.
       expect(Object.keys(flattened[1])[2]).toBe(
         "https://context.transmute.org/element/#publicKeyJwk"
