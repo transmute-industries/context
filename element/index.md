@@ -22,10 +22,8 @@ Maecenas sed ultricies tortor. Ut finibus finibus vulputate. Curabitur tempus pe
 
 Nunc mi massa, consequat ac tincidunt id, suscipit molestie sem. Vestibulum aliquam felis in ex laoreet rutrum. Duis tincidunt ullamcorper nulla id convallis. Quisque mattis est at diam tincidunt fringilla. In leo mi, congue et accumsan non, faucibus sed tortor. Nam viverra iaculis massa nec rutrum. Sed elementum eleifend leo, non sollicitudin nibh gravida a.
 
-### publicKeyJwk
-
 <dl>
-  <dt><a href="#publicKeyJwk">publicKeyJwk</a></dt>
+  <dt id="publicKeyJwk"><a href="#publicKeyJwk">publicKeyJwk</a></dt>
   <dd>Is something people use sometimes.</dd>
 </dl>
 
