@@ -12,12 +12,6 @@ describe("element-did", () => {
         id: "did:elem:eURSFEEv6J7s3TJ-jhT_ZS4uGRyCDbwc347EWlqpNgw",
         publicKey: [
           {
-            id: "did:elem:eURSFEEv6J7s3TJ-jhT_ZS4uGRyCDbwc347EWlqpNgw#key-0",
-            type: "EcdsaSecp256k1VerificationKey2019",
-            publicKeyHex:
-              "027560af3387d375e3342a6968179ef3c6d04f5d33b2b611cf326d4708badd7770"
-          },
-          {
             id:
               "did:elem:eURSFEEv6J7s3TJ-jhT_ZS4uGRyCDbwc347EWlqpNgw#key-JUvpllMEYUZ2joO59UNui_XYDqxVqiFLLAJ8klWuPBw",
             type: "EcdsaSecp256k1VerificationKey2019",
@@ -37,10 +31,15 @@ describe("element-did", () => {
       const hash = crypto
         .createHash("sha256")
         .update(canonized)
-        .digest("base64");
-      expect(hash).toBe("TKlt3jKMfEqpBdBLXLYjKQ9qiESyijZGjc54rQy40m0=");
-      const flattened = await jsonld.flatten(elemDidDoc);
-      console.log(JSON.stringify(flattened, null, 2));
+        .digest("hex");
+      expect(hash).toBe(
+        "bee95f2dd8ceb03594292a5a0deb07ff8070302518b24f62261e8df0a1ddad81"
+      );
+      const flattened = await jsonld.flatten(doc);
+      // You should click these links and make sure the documentation is correct.
+      expect(Object.keys(flattened[1])[2]).toBe(
+        "https://context.transmute.org/element/#publicKeyJwk"
+      );
     });
   });
 });
