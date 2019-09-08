@@ -7,7 +7,7 @@
     "dc": "http://purl.org/dc/terms/",
     "schema": "http://schema.org/",
     "sec": "https://w3id.org/security#",
-    "elem": "https://context.transmute.org/element#",
+    "elem": "https://context.transmute.org/element/#",
     "didv": "https://w3id.org/did#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
 
