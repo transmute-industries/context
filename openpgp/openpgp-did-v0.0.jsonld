@@ -4,7 +4,7 @@
     "id": "@id",
     "type": "@type",
 
-    "openpgp": "https://context.transmute.org/openpgp/#",
+    "openpgp": "https://transmute-industries.github.io/PROPOSAL-OpenPgpSignature2019/#",
 
     "OpenPgpSignature2019": "openpgp:OpenPgpSignature2019",
     "OpenPgpVerificationKey2019": "openpgp:OpenPgpVerificationKey2019",
