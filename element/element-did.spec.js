@@ -33,7 +33,7 @@ describe("element-did", () => {
         .update(canonized)
         .digest("hex");
       expect(hash).toBe(
-        "bee95f2dd8ceb03594292a5a0deb07ff8070302518b24f62261e8df0a1ddad81"
+        "e989400ec23a42440795abab8a20388588da7390830b26a58e448bf15e3cb217"
       );
       const flattened = await jsonld.flatten(doc);
       // You should click these links and make sure the documentation is correct.

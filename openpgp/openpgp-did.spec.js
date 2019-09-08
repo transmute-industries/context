@@ -1,7 +1,7 @@
 const jsonld = require("jsonld");
 const crypto = require("crypto");
 
-describe.only("openpgp-did", () => {
+describe("openpgp-did", () => {
   describe("v0.0", () => {
     it("publicKeyPgp", async () => {
       const doc = {
@@ -20,16 +20,21 @@ describe.only("openpgp-did", () => {
           }
         ]
       };
-      // const canonized = await jsonld.canonize(doc, {
-      //   format: "application/n-quads"
-      // });
-      // const hash = crypto
-      //   .createHash("sha256")
-      //   .update(canonized)
-      //   .digest("base64");
-      // expect(hash).toBe("TKlt3jKMfEqpBdBLXLYjKQ9qiESyijZGjc54rQy40m0=");
+      const canonized = await jsonld.canonize(doc, {
+        format: "application/n-quads"
+      });
+      const hash = crypto
+        .createHash("sha256")
+        .update(canonized)
+        .digest("hex");
+      expect(hash).toBe(
+        "ea37f43b1b7d91df1d66dfb45a6c198e9d87159f3f0c18c80f55d8067203142f"
+      );
       const flattened = await jsonld.flatten(doc);
-      console.log(JSON.stringify(flattened, null, 2));
+      // You should click these links and make sure the documentation is correct.
+      expect(Object.keys(flattened[1])[2]).toBe(
+        "https://transmute-industries.github.io/PROPOSAL-OpenPgpSignature2019/#publicKeyPgp"
+      );
     });
   });
 });

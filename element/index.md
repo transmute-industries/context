@@ -1,38 +1,38 @@
 # Element
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend ante sit amet lectus molestie consectetur. Praesent pretium ut ipsum finibus accumsan. Aliquam accumsan in velit ut eleifend. Duis non turpis quam. Nam vel vulputate sem, non pharetra libero. Pellentesque viverra neque turpis, id tincidunt purus pellentesque ut. Integer ultricies augue diam, pellentesque vestibulum elit viverra vel. Curabitur dapibus semper tellus, eu sodales nisi pharetra nec. Cras placerat bibendum sapien in auctor. Donec quis magna semper nisi interdum pulvinar in ut sem.
+Element is an experimental DID Method, built using the Sidetree protocol, IPFS and Ethereum. Development is supported by the DIF, Microsoft and Consensys.
 
-Praesent id luctus ex. Suspendisse luctus eu dui in rutrum. Morbi commodo lacus in euismod vehicula. Aenean a laoreet lorem. In ante sapien, ultricies ac lorem sed, elementum pellentesque ante. Suspendisse eu lacus aliquet, egestas nibh sit amet, luctus quam. Aenean tincidunt risus non facilisis rutrum. Integer a aliquam est. In sit amet aliquet metus. Nullam finibus velit lectus, id consectetur lorem luctus ac. Donec aliquam sollicitudin gravida. Donec at nulla nibh. Maecenas ultricies id ex a vestibulum.
+Element supports a number of public key types which are not currently supported by the W3C, despite being listed in the DID Spec.
 
-Phasellus cursus malesuada massa, id commodo magna faucibus eget. Donec lacinia velit sed dui vehicula, a hendrerit ex interdum. Nulla sapien leo, eleifend in eros et, lobortis facilisis metus. Suspendisse non felis felis. Sed elit lacus, auctor sit amet lacinia in, lacinia at enim. Proin in quam et lorem tincidunt auctor. Sed elementum risus et nisl tempor, a dignissim massa lacinia. Praesent eget ultricies odio, eget gravida orci. Etiam nec neque a est pellentesque vulputate eget vitae libero. Praesent vel sollicitudin erat. Maecenas eget malesuada enim. Integer sed odio vitae lectus fringilla iaculis vulputate quis risus. Vestibulum rhoncus orci hendrerit sapien pretium eleifend.
+While we wait for these public key types to be added to the DID Spec, you can add support for them by leveraging the json-ld context and documentation hosted in this repo.
 
-Maecenas sed ultricies tortor. Ut finibus finibus vulputate. Curabitur tempus pellentesque velit non posuere. Praesent lobortis consequat tristique. Sed vulputate tincidunt mi, eget semper ipsum auctor eget. Aenean et purus eleifend purus dapibus sodales. Duis in nulla facilisis turpis rhoncus euismod a sed turpis. Nulla feugiat eget elit id condimentum.
+- [Latest Element JSON-LD Context](../element-did-v0.0.jsonld)
 
-Nunc mi massa, consequat ac tincidunt id, suscipit molestie sem. Vestibulum aliquam felis in ex laoreet rutrum. Duis tincidunt ullamcorper nulla id convallis. Quisque mattis est at diam tincidunt fringilla. In leo mi, congue et accumsan non, faucibus sed tortor. Nam viverra iaculis massa nec rutrum. Sed elementum eleifend leo, non sollicitudin nibh gravida a.
+### Terminology
 
-- [element-did-v0.0.jsonld](../element-did-v0.0.jsonld)
+<h4 id="publicKeyJwk"><a href="#publicKeyJwk">publicKeyJwk</a></h4>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend ante sit amet lectus molestie consectetur. Praesent pretium ut ipsum finibus accumsan. Aliquam accumsan in velit ut eleifend. Duis non turpis quam. Nam vel vulputate sem, non pharetra libero. Pellentesque viverra neque turpis, id tincidunt purus pellentesque ut. Integer ultricies augue diam, pellentesque vestibulum elit viverra vel. Curabitur dapibus semper tellus, eu sodales nisi pharetra nec. Cras placerat bibendum sapien in auctor. Donec quis magna semper nisi interdum pulvinar in ut sem.
+A public key in JWK format. A JSON Web Key (JWK) is a JavaScript Object Notation (JSON) data structure that represents a cryptographic key. Read [RFC7517](https://tools.ietf.org/html/rfc7517).
 
-Praesent id luctus ex. Suspendisse luctus eu dui in rutrum. Morbi commodo lacus in euismod vehicula. Aenean a laoreet lorem. In ante sapien, ultricies ac lorem sed, elementum pellentesque ante. Suspendisse eu lacus aliquet, egestas nibh sit amet, luctus quam. Aenean tincidunt risus non facilisis rutrum. Integer a aliquam est. In sit amet aliquet metus. Nullam finibus velit lectus, id consectetur lorem luctus ac. Donec aliquam sollicitudin gravida. Donec at nulla nibh. Maecenas ultricies id ex a vestibulum.
+#### Example:
 
-Phasellus cursus malesuada massa, id commodo magna faucibus eget. Donec lacinia velit sed dui vehicula, a hendrerit ex interdum. Nulla sapien leo, eleifend in eros et, lobortis facilisis metus. Suspendisse non felis felis. Sed elit lacus, auctor sit amet lacinia in, lacinia at enim. Proin in quam et lorem tincidunt auctor. Sed elementum risus et nisl tempor, a dignissim massa lacinia. Praesent eget ultricies odio, eget gravida orci. Etiam nec neque a est pellentesque vulputate eget vitae libero. Praesent vel sollicitudin erat. Maecenas eget malesuada enim. Integer sed odio vitae lectus fringilla iaculis vulputate quis risus. Vestibulum rhoncus orci hendrerit sapien pretium eleifend.
+```json
+{
+  "@context": "https://context.transmute.org/element/element-did-v0.0.jsonld",
+  "id": "did:elem:eURSFEEv6J7s3TJ-jhT_ZS4uGRyCDbwc347EWlqpNgw#key-JUvpllMEYUZ2joO59UNui_XYDqxVqiFLLAJ8klWuPBw",
+  "type": "EcdsaSecp256k1VerificationKey2019",
+  "publicKeyJwk": {
+    "crv": "secp256k1",
+    "kid": "JUvpllMEYUZ2joO59UNui_XYDqxVqiFLLAJ8klWuPBw",
+    "kty": "EC",
+    "x": "dWCvM4fTdeM0KmloF57zxtBPXTOythHPMm1HCLrdd3A",
+    "y": "36uMVGM7hnw-N6GnjFcihWE3SkrhMLzzLCdPMXPEXlA"
+  }
+}
+```
 
-Maecenas sed ultricies tortor. Ut finibus finibus vulputate. Curabitur tempus pellentesque velit non posuere. Praesent lobortis consequat tristique. Sed vulputate tincidunt mi, eget semper ipsum auctor eget. Aenean et purus eleifend purus dapibus sodales. Duis in nulla facilisis turpis rhoncus euismod a sed turpis. Nulla feugiat eget elit id condimentum.
+### Conclusion
 
-Nunc mi massa, consequat ac tincidunt id, suscipit molestie sem. Vestibulum aliquam felis in ex laoreet rutrum. Duis tincidunt ullamcorper nulla id convallis. Quisque mattis est at diam tincidunt fringilla. In leo mi, congue et accumsan non, faucibus sed tortor. Nam viverra iaculis massa nec rutrum. Sed elementum eleifend leo, non sollicitudin nibh gravida a.
+This is an example of how contexts and documentation can be hosted together, using markdown instead of ReSpec... You should probably use ReSpec if you plan to submit your context to the W3C.
 
-<dl>
-  <dt id="publicKeyJwk"><a href="#publicKeyJwk">publicKeyJwk</a></dt>
-  <dd>Is something people use sometimes.</dd>
-</dl>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eleifend ante sit amet lectus molestie consectetur. Praesent pretium ut ipsum finibus accumsan. Aliquam accumsan in velit ut eleifend. Duis non turpis quam. Nam vel vulputate sem, non pharetra libero. Pellentesque viverra neque turpis, id tincidunt purus pellentesque ut. Integer ultricies augue diam, pellentesque vestibulum elit viverra vel. Curabitur dapibus semper tellus, eu sodales nisi pharetra nec. Cras placerat bibendum sapien in auctor. Donec quis magna semper nisi interdum pulvinar in ut sem.
-
-Praesent id luctus ex. Suspendisse luctus eu dui in rutrum. Morbi commodo lacus in euismod vehicula. Aenean a laoreet lorem. In ante sapien, ultricies ac lorem sed, elementum pellentesque ante. Suspendisse eu lacus aliquet, egestas nibh sit amet, luctus quam. Aenean tincidunt risus non facilisis rutrum. Integer a aliquam est. In sit amet aliquet metus. Nullam finibus velit lectus, id consectetur lorem luctus ac. Donec aliquam sollicitudin gravida. Donec at nulla nibh. Maecenas ultricies id ex a vestibulum.
-
-Phasellus cursus malesuada massa, id commodo magna faucibus eget. Donec lacinia velit sed dui vehicula, a hendrerit ex interdum. Nulla sapien leo, eleifend in eros et, lobortis facilisis metus. Suspendisse non felis felis. Sed elit lacus, auctor sit amet lacinia in, lacinia at enim. Proin in quam et lorem tincidunt auctor. Sed elementum risus et nisl tempor, a dignissim massa lacinia. Praesent eget ultricies odio, eget gravida orci. Etiam nec neque a est pellentesque vulputate eget vitae libero. Praesent vel sollicitudin erat. Maecenas eget malesuada enim. Integer sed odio vitae lectus fringilla iaculis vulputate quis risus. Vestibulum rhoncus orci hendrerit sapien pretium eleifend.
-
-Maecenas sed ultricies tortor. Ut finibus finibus vulputate. Curabitur tempus pellentesque velit non posuere. Praesent lobortis consequat tristique. Sed vulputate tincidunt mi, eget semper ipsum auctor eget. Aenean et purus eleifend purus dapibus sodales. Duis in nulla facilisis turpis rhoncus euismod a sed turpis. Nulla feugiat eget elit id condimentum.
-
-Nunc mi massa, consequat ac tincidunt id, suscipit molestie sem. Vestibulum aliquam felis in ex laoreet rutrum. Duis tincidunt ullamcorper nulla id convallis. Quisque mattis est at diam tincidunt fringilla. In leo mi, congue et accumsan non, faucibus sed tortor. Nam viverra iaculis massa nec rutrum. Sed elementum eleifend leo, non sollicitudin nibh gravida a.
+- [respec](https://github.com/w3c/respec)

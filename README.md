@@ -1,8 +1,8 @@
-This [git repo](https://github.com/transmute-industries/context) and website are designed to enable the most frictionless experience for developing software that relies on JSON-LD.
+#### [GitHub](https://github.com/transmute-industries/context)
+
+This repo and website are designed to enable the most frictionless experience for developing software that relies on JSON-LD.
 
 > JSON-LD 1.1 is being formally specified in the W3C JSON-LD Working Group. To participate in this work, please join the W3C and then [join the Working Group](https://www.w3.org/2018/json-ld-wg/).
-
-#### About
 
 When working with the W3C JSON-LD contexts, you may need to extend or add to them. You should still attempt to push your changes into the correct W3C context, such as:
 
@@ -18,5 +18,4 @@ You can use this repo as a guide for extending contexts, and ensuring that your 
 ### Table of Contents
 
 - [Element](https://context.transmute.org/element)
-
-#### [Source Code on GitHub](https://github.com/transmute-industries/context)
+- [OpenPGP](https://context.transmute.org/openpgp)
