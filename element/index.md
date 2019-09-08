@@ -6,7 +6,7 @@ Element supports a number of public key types which are not currently supported 
 
 While we wait for these public key types to be added to the DID Spec, you can add support for them by leveraging the json-ld context and documentation hosted in this repo.
 
-- [Latest Element JSON-LD Context](../element-did-v0.0.jsonld)
+- [Latest Element JSON-LD Context](./element-did-v0.0.jsonld)
 
 ### Terminology
 
