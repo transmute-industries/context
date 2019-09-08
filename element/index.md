@@ -1,6 +1,6 @@
 # Element
 
-Element is an experimental DID Method, built using the Sidetree protocol, IPFS and Ethereum. Development is supported by the DIF, Microsoft and Consensys.
+Element is an experimental DID Method, built using the Sidetree protocol, IPFS and Ethereum. Development is supported by the DIF, Microsoft and Consensys. You can learn more about it [here](https://github.com/decentralized-identity/element).
 
 Element supports a number of public key types which are not currently supported by the W3C, despite being listed in the DID Spec.
 
@@ -102,6 +102,6 @@ when it contains a proof field with type `EcdsaSecp256k1Signature2019`. The proo
 
 ### Conclusion
 
-This is an example of how contexts and documentation can be hosted together, using markdown instead of ReSpec... You should probably use ReSpec if you plan to submit your context to the W3C.
+This is an example of how contexts and documentation can be hosted together, using markdown instead of ReSpec... You should probably use ReSpec if you plan to submit your context to the W3C, for example: [lds-ecdsa-secp256k1-2019](https://github.com/w3c-dvcg/lds-ecdsa-secp256k1-2019/pull/2)
 
 - [respec](https://github.com/w3c/respec)

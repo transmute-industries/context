@@ -20,4 +20,4 @@ When working with the W3C JSON-LD contexts, you may need to extend or add to the
 - [https://w3id.org/did](https://w3id.org/did)
 - [https://w3id.org/did/v1](https://w3id.org/did/v1)
 
-However, these contexts and documentation are very selective and strict (and rigthly so), and you may find it difficult to contribute, especially if your work is experimental.
+However, these contexts and documentation are very selective and strict, and you may find it difficult to contribute, especially if your work is experimental.
