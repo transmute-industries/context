@@ -6,6 +6,8 @@
 
 ## How do I contribute to things that use JSON-LD?
 
+Chances are you are caring about JSON-LD because you care about semantic web or decentralized identity and verifiable credentials. If you are trying to understand JSON-LD because of JSON-LD Signatures, and you wish to create your own JSON-LD Signature Suites, you need to be aware of the related contexts, and be careful not to choose existing terms, or overload existing concepts. You should review the [VC Data Model](https://www.w3.org/TR/vc-data-model/), and ideally use an existing signature suite.
+
 You must understand the basics of JSON-LD and strive not to overload / collide with JSON-LD terms.
 
 You should review the `@context` and the humand an machine parts of JSON-LD and report any undocumented terms. For example, the DID WG Context:
