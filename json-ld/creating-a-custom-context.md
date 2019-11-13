@@ -34,6 +34,6 @@ You should then define your properties like so:
 "publicKeyJwk": "elem:publicKeyJwk",
 ```
 
-You can then verify that the following URL is resolvable to proove your context is hosted correctly:
+You can then verify that the following URL is resolvable to prove your context is hosted correctly:
 
 [https://context.transmute.org/element/#publicKeyJwk](https://context.transmute.org/element/#publicKeyJwk)
