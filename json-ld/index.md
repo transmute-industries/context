@@ -14,7 +14,12 @@ You must understand the basics of JSON-LD and strive not to overload / collide w
 
 You must not ignore JSON-LD if it is being used in a standard which you care about.
 
-You have a responsibility to understand the technologies employed by the standard, and to make supporting contributions to the standard that do not confuse, detract from, or harm the choices that were made by others.
+You have a responsibility to understand the technologies employed by the standard, and to make supporting contributions to the standard that do not confuse, detract from, or harm the choices that were made previously.
+
+See also these guides:
+
+- [creating your own context](https://context.transmute.org/json-ld/creating-a-custom-context).
+- [extending-an-existing-context](https://context.transmute.org/json-ld/extending-an-existing-context).
 
 ## I found a bug in a JSON-LD context
 
@@ -33,8 +38,6 @@ You should start by hosting your own context, both the json file, and the human 
 If you want to use github pages, you can use this repo as a template to do so:
 
 [https://github.com/transmute-industries/context](https://github.com/transmute-industries/context)
-
-See also this guide on [creating your own context](https://context.transmute.org/json-ld/creating-a-custom-context).
 
 You should make sure all the properties in your context are documented.
 
