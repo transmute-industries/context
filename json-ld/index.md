@@ -4,11 +4,51 @@
 
 > JSON-LD is a lightweight Linked Data format. It is easy for humans to read and write. It is based on the already successful JSON format and provides a way to help JSON data interoperate at Web-scale.
 
-## How do I contribute to things that use JSON-LD?
+## Why should I care about JSON-LD?
 
-Chances are you are caring about JSON-LD because you care about semantic web or decentralized identity and verifiable credentials. If you are trying to understand JSON-LD because of JSON-LD Signatures, and you wish to create your own JSON-LD Signature Suites, you need to be aware of the related contexts, and be careful not to choose existing terms, or overload existing concepts. You should review the [VC Data Model](https://www.w3.org/TR/vc-data-model/), and ideally use an existing signature suite.
+You care about JSON-LD because you care about semantic web or decentralized identity and verifiable credentials, and maybe for other reasons. If you are trying to understand JSON-LD because of JSON-LD Signatures, and you wish to create your own JSON-LD Signature Suites, you need to be aware of the related contexts, and be careful not to choose existing terms, or overload existing concepts.
+
+You should review the [VC Data Model](https://www.w3.org/TR/vc-data-model/), and ideally use an existing signature suite.
 
 You must understand the basics of JSON-LD and strive not to overload / collide with JSON-LD terms.
+
+You must not ignore JSON-LD if it is being used in a standard which you care about.
+
+You have a responsibility to understand the technologies employed by the standard, and to make supporting contributions to the standard that do not confuse, detract from, or harm the choices that were made by others.
+
+## I found a bug in a JSON-LD context
+
+You need to find the repo / maintainers of the context file & documentation, and open issues or contact them directly.
+
+You may need to do a bit of digging if the context file is behind an http proxy or redirect.
+
+## I want to fix a bug in a JSON-LD context
+
+You should open a pull request against the context you wish to update, and its documentation, and cross link the pull requests if they are not in the same repo.
+
+## I want to implement a feature in a JSON-LD context
+
+You should start by hosting your own context, both the json file, and the human readable documentation.
+
+If you want to use github pages, you can use this repo as a template to do so:
+
+[https://github.com/transmute-industries/context](https://github.com/transmute-industries/context)
+
+See also this guide on [creating your own context](https://context.transmute.org/json-ld/creating-a-custom-context).
+
+You should make sure all the properties in your context are documented.
+
+You should next open a pull request against the context you wish to update, and its documentation, and cross link the pull requests if they are not in the same repo.
+
+Once your pull request is merged, you can use the updated context, and stop using your own hosted version.
+
+If the code maintainers refused to merge your pull request, or don't want your changes, you will need to continue to host your context and its documentation yourself.
+
+## I want to contribute to the DID Spec JSON-LD Context
+
+You will need to review this context files, hosted here:
+
+[https://github.com/w3c/did-core/tree/master/contexts](https://github.com/w3c/did-core/tree/master/contexts)
 
 You should review the `@context` and the humand an machine parts of JSON-LD and report any undocumented terms. For example, the DID WG Context:
 
@@ -67,3 +107,5 @@ You should always start by hosting your own.
 You should make sure all the properties are documented.
 
 If you think what you have is valuable, having a working hosted version of it will help others quickly agree with you, and make it obvious how your changes can be incorporated.
+
+You should never open a PR to update a context, with fields that are not documented.
