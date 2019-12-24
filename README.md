@@ -22,3 +22,17 @@ When working with the W3C JSON-LD contexts, you may need to extend or add to the
 - [https://w3id.org/did/v1](https://w3id.org/did/v1)
 
 However, these contexts and documentation are very selective and strict, and you may find it difficult to contribute, especially if your work is experimental.
+
+### Examples
+
+#### JSON Schema + JSON-LD Together
+
+https://github.com/w3c-ccg/vc-json-schemas
+
+This repo contains some examples of hosting schema and context defintions side by side in order to define types of verifiable credentials with both JSON Schema and JSON-LD.
+
+#### Greeting Card Verifiable Credential
+
+https://github.com/transmute-industries/vc-greeting-card
+
+This repo contains an example of a custom verifiable credential. It contains example context definitions in JSON-LD and markdown.
