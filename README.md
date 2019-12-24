@@ -6,6 +6,10 @@ This repo and website are designed to enable the most frictionless experience fo
 
 You can use this repo as a guide for extending contexts, and ensuring that your JSON-LD is functioning as expected and fully documented. This should help you make the case that your extensions should be included, or eliminate the need for them to be included.
 
+Before proceeding, please review:
+
+## [json-ld-api-best-practices/](https://json-ld.org/spec/latest/json-ld-api-best-practices/)
+
 ### Table of Contents
 
 - [Working with JSON-LD](https://context.transmute.org/json-ld)
