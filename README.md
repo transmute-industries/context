@@ -8,7 +8,7 @@ You can use this repo as a guide for extending contexts, and ensuring that your 
 
 ### Table of Contents
 
-- [JSON-LD](https://context.transmute.org/json-ld)
+- [Working with JSON-LD](https://context.transmute.org/json-ld)
 - [Element](https://context.transmute.org/element)
 - [OpenPGP](https://context.transmute.org/openpgp)
 

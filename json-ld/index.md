@@ -4,13 +4,13 @@
 
 > JSON-LD is a lightweight Linked Data format. It is easy for humans to read and write. It is based on the already successful JSON format and provides a way to help JSON data interoperate at Web-scale.
 
-## Why should I care about JSON-LD?
+## What do I need to know about JSON-LD?
 
-You care about JSON-LD because you care about semantic web or decentralized identity and verifiable credentials, and maybe for other reasons. If you are trying to understand JSON-LD because of JSON-LD Signatures, and you wish to create your own JSON-LD Signature Suites, you need to be aware of the related contexts, and be careful not to choose existing terms, or overload existing concepts.
+Maybe you are seeing JSON-LD because you care about semantic web or decentralized identity and verifiable credentials, and maybe for other reasons. If you are trying to understand JSON-LD because of JSON-LD Signatures, and you wish to create your own JSON-LD Signature Suites, you need to be aware of the related contexts, and be careful not to choose existing terms, or overload existing concepts.
 
 You should review the [VC Data Model](https://www.w3.org/TR/vc-data-model/), and ideally use an existing signature suite.
 
-You must understand the basics of JSON-LD and strive not to overload / collide with JSON-LD terms.
+If you rely on JSON-LD terms, you must understand the basics of JSON-LD and strive not to overload / collide with existing JSON-LD terms.
 
 You must not ignore JSON-LD if it is being used in a standard which you care about.
 
