@@ -8,7 +8,7 @@ You can use this repo as a guide for extending contexts, and ensuring that your 
 
 Before proceeding, please review:
 
-## [json-ld-api-best-practices/](https://json-ld.org/spec/latest/json-ld-api-best-practices/)
+## ✨ [json-ld-api-best-practices](https://json-ld.org/spec/latest/json-ld-api-best-practices/) ✨
 
 ### Table of Contents
 
