@@ -9,8 +9,8 @@ You can use this repo as a guide for extending contexts, and ensuring that your 
 ### Table of Contents
 
 - [Working with JSON-LD](https://context.transmute.org/json-ld)
-- [Element](https://context.transmute.org/element)
-- [OpenPGP](https://context.transmute.org/openpgp)
+- [Example context for did:elem DID Method](https://context.transmute.org/element)
+- [Example context for OpenPgpSignature2019 Linked Data Signature Suite](https://context.transmute.org/openpgp)
 
 ### Motivation
 
