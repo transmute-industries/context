@@ -10,6 +10,6 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^24.9.0",
-    "jsonld": "^1.7.0"
+    "jsonld": "^8.1.0"
   }
 }
